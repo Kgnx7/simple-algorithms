@@ -1,1 +1,1 @@
-í³š Some implementations of simple algorithms in C++ with console interface.
+# ðŸ“š Some implementations of simple algorithms in C++ with console interface.
