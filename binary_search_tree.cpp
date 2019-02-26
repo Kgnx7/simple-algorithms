@@ -9,7 +9,7 @@ struct node {
 
 struct node *root = NULL;
 
-void insert_to_tree(int data)
+static void insert(int data)
 {
 	struct node* tempNode = (struct node*) malloc(sizeof(struct node));
 	struct node* current;
@@ -59,7 +59,7 @@ void insert_to_tree(int data)
 	}
 }
 
-struct node* search(int data)
+static struct node* search(int data)
 {
 	struct node* current = root;
 	std::cout << "# Visiting elements: ";
@@ -85,7 +85,7 @@ void binary_search_tree()
 	std::vector<int> v = get_vector();
 
 	for (int data : v)
-		insert_to_tree(data);
+		insert(data);
 	
 	log("\n# Enter the element to found below.\n");
 	int i = get_value();

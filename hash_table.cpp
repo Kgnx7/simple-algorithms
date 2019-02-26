@@ -16,7 +16,7 @@ int hashCode(int data)
 	return data % SIZE;
 }
 
-struct DataItem* search(int data)
+static struct DataItem* search(int data)
 {
 	int hashIndex = hashCode(data);
 
@@ -32,7 +32,7 @@ struct DataItem* search(int data)
 	return NULL;
 }
 
-void insert_to_hash(int data)
+static void insert(int data)
 {
 
 	struct DataItem* item = new DataItem;
@@ -55,7 +55,7 @@ void hash_table()
 	std::vector<int> v = get_vector();
 
 	for (int n: v)
-		insert_to_hash(n);
+		insert(n);
 
 	log("\n# Enter the element to found below.\n");
 	int i = get_value();

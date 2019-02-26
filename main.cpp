@@ -10,10 +10,10 @@ void linear_search();
 void binary_search();
 void interpolation_search();
 void hash_table();
-//void selection_sort();
-//void merge_sort();
-//void shell_sort();
-//void quick_sort();
+void selection_sort();
+void merge_sort();
+void shell_sort();
+void quick_sort();
 
 int main()
 {
@@ -39,20 +39,20 @@ int main()
 			break;
 		case 4: hash_table();
 			break;
-		//case 5: insertion_sort();
-		//	break;
-		//case 6: bubble_sort();
-		//	break;
-		//case 7: selection_sort();
-		//	break;
-		//case 8: merge_sort();
-		//	break;
-		//case 9: shell_sort();
-		//	break;
-		//case 10: quick_sort();
-		//	break;
-		//case 11: heap_sort();
-		//	break;
+		case 5: insertion_sort();
+			break;
+		case 6: bubble_sort();
+			break;
+		case 7: selection_sort();
+			break;
+		case 8: merge_sort();
+			break;
+		case 9: shell_sort();
+			break;
+		case 10: quick_sort();
+			break;
+		case 11: heap_sort();
+			break;
 		case 12: binary_search_tree();
 			break;
 		default:
@@ -70,8 +70,8 @@ void show_menu()
 	const int num = 12;
 	std::string algorithms[num] = {
 		"Linear search",
-		"Binary Search", 
-		"Interpolation Search", 
+		"Binary search", 
+		"Interpolation search", 
 		"Hash table",
 		"Insertion sort",
 		"Bubble sort",
